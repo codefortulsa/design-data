@@ -1,0 +1,169 @@
+<outwitAutomator>
+<documentproperties>
+<active>true</active>
+<url>http://www.oscn.net/dockets/GetCaseInformation</url>
+<masterId>{de152845-8ee9-4113-a476-d2c2b9d86b6c}</masterId>
+<name>OSCN Case w/ collections</name>
+<version>1.003</version>
+<versionId>{de152845-8ee9-4113-a476-d2c2b9d86b6c}</versionId>
+<automatorType>scraper</automatorType>
+<kernelVersion>6.0.0.107</kernelVersion>
+<creationOutfit>OutWit Hub</creationOutfit>
+<author />
+<company />
+<created>2017-05-11T10:14:40-5:00</created>
+<lastModified>2017-10-26T19:32:41-5:00</lastModified>
+<comments />
+<options /><hash>l6Nudo9Ns1H8mjc57Z7b7A==</hash>
+</documentproperties>
+<data>
+<line>
+<ok>true</ok>
+<description>County</description>
+<before>IN THE DISTRICT COURT IN AND FOR </before>
+<after> COUNTY</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Casenum</description>
+<before>&lt;strong&gt;
+              No. </before>
+<after>&lt;br&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Filedate</description>
+<before>&lt;br&gt;
+            Filed: </before>
+<after>&lt;br&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Closedate</description>
+<before>Closed: </before>
+<after>&lt;br&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Attorney</description>
+<before>&lt;td valign="top" width="50%"&gt;</before>
+<after>&lt;/td&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Count</description>
+<before>Count as Filed: </before>
+<after>, 
+                            in violation</after>
+<format></format>
+<replace></replace>
+<separator>,</separator>
+<labels>Ccode, Count</labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Disposition</description>
+<before>Disposed:  </before>
+<after>&lt;/strong&gt;</after>
+<format></format>
+<replace></replace>
+<separator>;</separator>
+<labels>Disposition, Date, Disp_notes</labels>
+</line>
+<line>
+<ok>true</ok>
+<description>fee</description>
+<before>&lt;font color="green"&gt;$ </before>
+<after>&lt;/font&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Payment</description>
+<before>ACCOUNT&lt;/nobr&gt;&lt;/font&gt;
+        &lt;/td&gt;
+        &lt;td valign="top"&gt;
+          &lt;p&gt;
+            &lt;font color="000000"&gt;</before>
+<after>&lt;/p&gt;</after>
+<format></format>
+<replace></replace>
+<separator>&lt;BR /&gt;</separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Countasdisposed</description>
+<before>Count as Disposed: </before>
+<after>&lt;br&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Collect</description>
+<before>&lt;font color="FF8C00"&gt;&lt;nobr&gt;</before>
+<after>&lt;/tr&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Bwentry</description>
+<before> &lt;font color="RED"&gt;&lt;nobr&gt;</before>
+<after>&lt;/tr&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Parties</description>
+<before>Parties&lt;/h2&gt;
+  &lt;p&gt;</before>
+<after>&lt;/p&gt;</after>
+<format></format>
+<replace></replace>
+<separator>&lt;br&gt;</separator>
+<labels></labels>
+</line>
+<line>
+<ok>true</ok>
+<description>Partylink</description>
+<before>&lt;a href="GetPartyRecord</before>
+<after>"&gt;</after>
+<format></format>
+<replace></replace>
+<separator></separator>
+<labels></labels>
+</line>
+</data>
+</outwitAutomator>
