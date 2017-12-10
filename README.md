@@ -11,7 +11,3 @@ Code for Tulsa and Asemio will be hosting an event at 36°N in Tulsa, OK to revi
 1. If possible, a utility should start by opening zip file and complete it's tasks without manual intervention.
 1. If you output the data, please remove names.
 1. Please do not add the offender zip files to this repo.  The files contain personal information and we don't want too many copies available. For the same reason, please do not add new data files either.
-
-# Files
-## zip2json.py (work in progress):
-Reads the contents of the zip file and (eventually) scans each line and converts to a stream of json objects.
